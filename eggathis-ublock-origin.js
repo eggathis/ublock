@@ -71,7 +71,7 @@ twitch-videoad.js text/javascript
         scope.MainUrlByUrl = [];
         scope.EncodingCacheTimeout = 60000;
         scope.DefaultProxyType = null;
-        scope.DefaultForcedQuality = null;
+        scope.DefaultForcedQuality = Source;
         scope.DefaultProxyQuality = null;
         scope.ClientIntegrityHeader = null;
         scope.AuthorizationHeader = null;
@@ -79,7 +79,7 @@ twitch-videoad.js text/javascript
     declareOptions(window);
     var TwitchAdblockSettings = {
         BannerVisible: true,
-        ForcedQuality: null,
+        ForcedQuality: Source,
         ProxyType: null,
         ProxyQuality: null,
     };
@@ -186,15 +186,6 @@ twitch-videoad.js text/javascript
                                                     if (IsPlayerAutoQuality) {
                                                         e.data.value = 'auto';
                                                     }
-                                                }
-                                                if (e.data.value.includes('160p')) {
-                                                    qualityToSelect = 5;
-                                                }
-                                                if (e.data.value.includes('360p')) {
-                                                    qualityToSelect = 4;
-                                                }
-                                                if (e.data.value.includes('480p')) {
-                                                    qualityToSelect = 3;
                                                 }
                                                 if (e.data.value.includes('720p')) {
                                                     qualityToSelect = 2;
