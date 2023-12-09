@@ -307,7 +307,7 @@ twitch-videoad.js text/javascript
                                     StreamInfos[channelName] = streamInfo = {};
                                 }
                                 streamInfo.ChannelName = channelName;
-                                streamInfo.Urls = [];// xxx.m3u8 -> { Resolution: "284x160", FrameRate: 30.0 }
+                                streamInfo.Urls = [];// xxx.m3u8 -> { Resolution: "Source", FrameRate: 30.0 }
                                 streamInfo.EncodingsM3U8Cache = [];
                                 streamInfo.EncodingsM3U8 = encodingsM3u8;
                                 var lines = encodingsM3u8.replace('\r', '').split('\n');
