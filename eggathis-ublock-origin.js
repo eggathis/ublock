@@ -159,7 +159,7 @@ twitch-videoad.js text/javascript
                             return;
                         //}
                         var autoQuality = doTwitchPlayerTask(false, false, false, true, false);
-                        var currentQuality = doTwitchPlayerTask(false, true, false, false, false);
+                        var currentQuality = doTwitchPlayerTask(false, false, false, true, false);
                         if (IsPlayerAutoQuality == null) {
                             IsPlayerAutoQuality = autoQuality;
                         }
